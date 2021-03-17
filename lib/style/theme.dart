@@ -30,7 +30,9 @@ final ThemeData kLightThemeData = ThemeData(
   canvasColor: AppColor.background,
   accentColor: AppColor.accent,
   errorColor: AppColor.error,
-  cursorColor: AppColor.primaryVariant,
+  textSelectionTheme: TextSelectionThemeData(
+    cursorColor: AppColor.primaryVariant,
+  ),
   scaffoldBackgroundColor: Colors.white,
   brightness: Brightness.light,
   iconTheme: IconThemeData(

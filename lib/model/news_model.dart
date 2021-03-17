@@ -14,7 +14,8 @@ class NewsModel {
     status = json['status'];
     totalResults = json['totalResults'];
     if (json['articles'] != null) {
-      articles = new List<Articles>();
+      articles = new List<Articles>.empty(growable: true);
+      ;
       json['articles'].forEach((v) {
         articles.add(new Articles.fromJson(v));
       });
